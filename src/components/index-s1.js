@@ -16,9 +16,9 @@ class IndexS1 extends Component{
             </Link>;
         }
         return(    
-            <Container fluid className="d-flex minh-100vh align-items-center py-5">
+            <Container fluid className="index-s1 d-flex minh-100vh align-items-center py-5">
                 <Row className="mx-0 w-100 mt-5 mt-md-0">
-                    <Col xs={12} md={{span:6,offset:6}} className="minh-50vh d-flex align-items-center">
+                    <Col xs={12} md={{span:5,offset:6}} className="minh-50vh d-flex align-items-center">
                         <div className="w-100 text-center text-md-start text-shadow"> 
                             <img src="img/navbar_logo.png" className="img-fluid" alt="logo"/>
                             <h2 className="display-6 text-white-50 text-uppercase">

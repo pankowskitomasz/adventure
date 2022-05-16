@@ -1,16 +1,45 @@
+$prefix: "../";
+$bg__about-img: 
+    $prefix+"img/about/about-s1.jpg",
+    $prefix+"img/about/about-s2.jpg";
+$bg__blog-img: "../img/blog/blog-s1.jpg";
 $bg__comingsoon-img: "../img/coming.jpg";
-$bg__contact-img: "../img/coming.jpg"; 
+$bg__contact-img: 
+    $prefix+"img/contact/contact-s1.jpg",
+    $prefix+"img/contact/contact-s2.jpg";
+$bg__menu-img: "../img/coming.jpg"; 
 $bg__error-img: "../img/privacy.jpg";
+$bg__index-img: $prefix+"img/index/index-s1.jpg";
 $bg__login-img: "../img/coming.jpg";
+$bg__menu-img: 
+    $prefix+"img/menu/menu-s1.jpg",
+    $prefix+"img/menu/menu-s2.jpg",
+    $prefix+"img/menu/menu-s3.jpg";
 $bg__privacy-img: "../img/privacy.jpg";
+$bg__shop-img: $prefix+"img/shop/shop-s1.jpg";
+$bg__user-img: $prefix+"img/user/user-s1.jpg";
 $bg__classes:
-    "error",
+    "about",
+    "blog",
     "comingsoon",
-    "privacy";
+    "contact",
+    "error",
+    "index",
+    "menu",
+    "privacy",
+    "shop",
+    "user";
 $bg__aoa:
-    $bg__error-img,
+    $bg__about-img,
+    $bg__blog-img,
     $bg__comingsoon-img,
-    $bg__privacy-img;
+    $bg__contact-img,
+    $bg__error-img,
+    $bg__index-img,
+    $bg__menu-img,
+    $bg__privacy-img,
+    $bg__shop-img,
+    $bg__user-img;
 $box__shadow: 2px 2px 5px #333;
 $color__black: #000;
 $color__container-bg: #333;

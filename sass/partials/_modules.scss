@@ -3,14 +3,15 @@
         background-color: $color__black!important;
     }
 }
-.contact{
-    &-bg{
-        @include set-background($bg__contact-img,0,"top center","cover","fixed");
-    }
-}
 .login{
     &-form{
         @include set-background($bg__login-img,0,"top left","cover","fixed");
+    }
+}
+.menu{
+    &-s3{
+        background-blend-mode: multiply !important;
+        background-color: #444 !important;
     }
 }
 .opacity{
@@ -28,4 +29,58 @@
 }
 textarea{
     resize: none;
+}
+.text{
+    &-shadow{
+        text-shadow: $text__shadow;
+    }
+}
+nav{
+    z-index: 10;
+}
+
+@media all and (max-width: 767px){
+    .about,.menu{
+        &-s1,&-s2{
+            * {
+                color: #fff!important;
+                text-shadow: $text__shadow;
+            }
+            background-blend-mode: multiply !important;
+            background-color: #999 !important;
+        }
+    }
+    .contact{
+        &-s1{
+            * {
+                color: #fff!important;
+                text-shadow: $text__shadow;
+            }
+            background-blend-mode: multiply !important;
+            background-color: #999 !important;
+        }
+    }
+    .index,.blog{
+        &-s1{
+            * {
+                color: #fff!important;
+                text-shadow: $text__shadow;
+            }
+            background-blend-mode: multiply !important;
+            background-color: #999 !important;
+            background-position: center;
+        }
+    }
+    .navbar{
+        &-toggler{
+            background-color: #666;
+            border-color: #333;
+        }
+        &-nav{
+            background-color: #666;
+            border: 1px solid #333;
+            opacity: 0.9;
+            padding: 10px
+        }
+    }
 }

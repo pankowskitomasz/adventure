@@ -9,7 +9,7 @@ import Button from "../../node_modules/react-bootstrap/Button";
 class ShopS1 extends Component{
     render(){
         return(    
-            <Container fluid className="d-flex minh-100vh align-items-start py-5">
+            <Container fluid className="shop-s1 d-flex minh-100vh align-items-start py-5">
                 <Row className="mx-0 w-100 mt-5">
                     <Col xs={12} sm={5} md={4} lg={3} className="pt-5">
                         <Card className="opacity-8 bg-dark">

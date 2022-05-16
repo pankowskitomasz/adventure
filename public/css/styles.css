@@ -32,15 +32,6 @@ body, html {
 }
 
 /* line 7, ../../sass/partials/_modules.scss */
-.contact-bg {
-  background-attachment: fixed;
-  background-image: url(../img/coming.jpg);
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* line 12, ../../sass/partials/_modules.scss */
 .login-form, .register-form {
   background-attachment: fixed;
   background-image: url(../img/coming.jpg);
@@ -49,24 +40,106 @@ body, html {
   background-size: cover;
 }
 
-/* line 17, ../../sass/partials/_modules.scss */
+/* line 12, ../../sass/partials/_modules.scss */
+.menu-s3 {
+  background-blend-mode: multiply !important;
+  background-color: #444 !important;
+}
+
+/* line 18, ../../sass/partials/_modules.scss */
 .opacity-8 {
   opacity: 0.8;
 }
-/* line 20, ../../sass/partials/_modules.scss */
+/* line 21, ../../sass/partials/_modules.scss */
 .opacity-9 {
   opacity: 0.9;
 }
 
-/* line 29, ../../sass/partials/_modules.scss */
+/* line 30, ../../sass/partials/_modules.scss */
 textarea {
   resize: none;
 }
 
+/* line 34, ../../sass/partials/_modules.scss */
+.text-shadow {
+  text-shadow: 1px 1px 4px #000;
+}
+
+/* line 38, ../../sass/partials/_modules.scss */
+nav {
+  z-index: 10;
+}
+
+@media all and (max-width: 767px) {
+  /* line 44, ../../sass/partials/_modules.scss */
+  .about-s1, .about-s2, .menu-s1, .menu-s2 {
+    background-blend-mode: multiply !important;
+    background-color: #999 !important;
+  }
+  /* line 45, ../../sass/partials/_modules.scss */
+  .about-s1 *, .about-s2 *, .menu-s1 *, .menu-s2 * {
+    color: #fff !important;
+    text-shadow: 1px 1px 4px #000;
+  }
+
+  /* line 54, ../../sass/partials/_modules.scss */
+  .contact-s1 {
+    background-blend-mode: multiply !important;
+    background-color: #999 !important;
+  }
+  /* line 55, ../../sass/partials/_modules.scss */
+  .contact-s1 * {
+    color: #fff !important;
+    text-shadow: 1px 1px 4px #000;
+  }
+
+  /* line 64, ../../sass/partials/_modules.scss */
+  .index-s1, .blog-s1 {
+    background-blend-mode: multiply !important;
+    background-color: #999 !important;
+    background-position: center;
+  }
+  /* line 65, ../../sass/partials/_modules.scss */
+  .index-s1 *, .blog-s1 * {
+    color: #fff !important;
+    text-shadow: 1px 1px 4px #000;
+  }
+
+  /* line 75, ../../sass/partials/_modules.scss */
+  .navbar-toggler {
+    background-color: #666;
+    border-color: #333;
+  }
+  /* line 79, ../../sass/partials/_modules.scss */
+  .navbar-nav {
+    background-color: #666;
+    border: 1px solid #333;
+    opacity: 0.9;
+    padding: 10px;
+  }
+}
 /* line 31, ../../sass/partials/_mixins.scss */
-.error-s1 {
-  background-attachment: fixed;
-  background-image: url(../img/privacy.jpg);
+.about-s1 {
+  background-attachment: scroll;
+  background-image: url(../img/about/about-s1.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 31, ../../sass/partials/_mixins.scss */
+.about-s2 {
+  background-attachment: scroll;
+  background-image: url(../img/about/about-s2.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 31, ../../sass/partials/_mixins.scss */
+.blog-s1 {
+  background-attachment: scroll;
+  background-image: url(../img/blog/blog-s1.jpg);
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -74,7 +147,7 @@ textarea {
 
 /* line 31, ../../sass/partials/_mixins.scss */
 .comingsoon-s1 {
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-image: url(../img/coming.jpg);
   background-position: top left;
   background-repeat: no-repeat;
@@ -82,9 +155,90 @@ textarea {
 }
 
 /* line 31, ../../sass/partials/_mixins.scss */
-.privacy-s1 {
-  background-attachment: fixed;
+.contact-s1 {
+  background-attachment: scroll;
+  background-image: url(../img/contact/contact-s1.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 31, ../../sass/partials/_mixins.scss */
+.contact-s2 {
+  background-attachment: scroll;
+  background-image: url(../img/contact/contact-s2.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 31, ../../sass/partials/_mixins.scss */
+.error-s1 {
+  background-attachment: scroll;
   background-image: url(../img/privacy.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 31, ../../sass/partials/_mixins.scss */
+.index-s1 {
+  background-attachment: scroll;
+  background-image: url(../img/index/index-s1.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 31, ../../sass/partials/_mixins.scss */
+.menu-s1 {
+  background-attachment: scroll;
+  background-image: url(../img/menu/menu-s1.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 31, ../../sass/partials/_mixins.scss */
+.menu-s2 {
+  background-attachment: scroll;
+  background-image: url(../img/menu/menu-s2.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 31, ../../sass/partials/_mixins.scss */
+.menu-s3 {
+  background-attachment: scroll;
+  background-image: url(../img/menu/menu-s3.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 31, ../../sass/partials/_mixins.scss */
+.privacy-s1 {
+  background-attachment: scroll;
+  background-image: url(../img/privacy.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 31, ../../sass/partials/_mixins.scss */
+.shop-s1 {
+  background-attachment: scroll;
+  background-image: url(../img/shop/shop-s1.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 31, ../../sass/partials/_mixins.scss */
+.user-s1 {
+  background-attachment: scroll;
+  background-image: url(../img/user/user-s1.jpg);
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
