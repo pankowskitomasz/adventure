@@ -16,9 +16,9 @@ class ContactData extends Component{
             </Link>;
         }
         return(        
-            <Container fluid className={"contact-s1 align-items-end p-0 d-flex minh-75vh "+this.props.classExt}>
+            <Container fluid className={"contact-s1 align-items-end p-0 d-flex minh-50vh "+this.props.classExt}>
                 <Row className="mx-auto text-center w-100">
-                    <Col xs={10} md={{span:5,offset:5}} className="text-white p-0 d-flex">
+                    <Col xs={10} md={{span:5,offset:6}} className="text-white p-0 d-flex">
                         <div className="p-5 contact-bg text-shadow">
                             <h1 className="display-4 fw-bold font-logo text-white ">
                                 Contact us

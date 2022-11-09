@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "KaushanScript";
+  src: url("../fonts/KaushanScript-Regular.ttf");
+}
 /* line 1, ../../sass/partials/_layout.scss */
 * {
   box-sizing: border-box;
@@ -26,12 +30,34 @@ body, html {
   min-height: 100vh;
 }
 
-/* line 2, ../../sass/partials/_modules.scss */
+@media all and (orientation: portrait) {
+  /* line 3, ../../sass/partials/_modules.scss */
+  .about-s1, .about-s2 {
+    background-position-x: center !important;
+  }
+
+  /* line 8, ../../sass/partials/_modules.scss */
+  .blog-s1, .shop-s1 {
+    background-position-x: center !important;
+  }
+
+  /* line 12, ../../sass/partials/_modules.scss */
+  .index-s1 {
+    background-color: #666 !important;
+    background-blend-mode: multiply !important;
+  }
+
+  /* line 17, ../../sass/partials/_modules.scss */
+  .menu-s1, .menu-s2, .menu-s3 {
+    background-position-x: center !important;
+  }
+}
+/* line 24, ../../sass/partials/_modules.scss */
 .bg-black {
   background-color: #000 !important;
 }
 
-/* line 7, ../../sass/partials/_modules.scss */
+/* line 29, ../../sass/partials/_modules.scss */
 .login-form, .register-form {
   background-attachment: fixed;
   background-image: url(../img/coming.jpg);
@@ -40,77 +66,83 @@ body, html {
   background-size: cover;
 }
 
-/* line 12, ../../sass/partials/_modules.scss */
+/* line 34, ../../sass/partials/_modules.scss */
 .menu-s3 {
   background-blend-mode: multiply !important;
   background-color: #444 !important;
 }
 
-/* line 18, ../../sass/partials/_modules.scss */
+/* line 40, ../../sass/partials/_modules.scss */
 .opacity-8 {
   opacity: 0.8;
 }
-/* line 21, ../../sass/partials/_modules.scss */
+/* line 43, ../../sass/partials/_modules.scss */
 .opacity-9 {
   opacity: 0.9;
 }
 
-/* line 30, ../../sass/partials/_modules.scss */
-textarea {
-  resize: none;
-}
-
-/* line 34, ../../sass/partials/_modules.scss */
+/* line 53, ../../sass/partials/_modules.scss */
 .text-shadow {
   text-shadow: 1px 1px 4px #000;
 }
 
-/* line 38, ../../sass/partials/_modules.scss */
+/* line 57, ../../sass/partials/_modules.scss */
+h1, h2, h3, h4, h5, h6, .nav-link {
+  font-family: "KaushanScript";
+  letter-spacing: 2px;
+}
+
+/* line 61, ../../sass/partials/_modules.scss */
 nav {
   z-index: 10;
 }
 
+/* line 64, ../../sass/partials/_modules.scss */
+textarea {
+  resize: none;
+}
+
 @media all and (max-width: 767px) {
-  /* line 44, ../../sass/partials/_modules.scss */
+  /* line 70, ../../sass/partials/_modules.scss */
   .about-s1, .about-s2, .menu-s1, .menu-s2 {
     background-blend-mode: multiply !important;
     background-color: #999 !important;
   }
-  /* line 45, ../../sass/partials/_modules.scss */
+  /* line 71, ../../sass/partials/_modules.scss */
   .about-s1 *, .about-s2 *, .menu-s1 *, .menu-s2 * {
     color: #fff !important;
     text-shadow: 1px 1px 4px #000;
   }
 
-  /* line 54, ../../sass/partials/_modules.scss */
+  /* line 80, ../../sass/partials/_modules.scss */
   .contact-s1 {
     background-blend-mode: multiply !important;
     background-color: #999 !important;
   }
-  /* line 55, ../../sass/partials/_modules.scss */
+  /* line 81, ../../sass/partials/_modules.scss */
   .contact-s1 * {
     color: #fff !important;
     text-shadow: 1px 1px 4px #000;
   }
 
-  /* line 64, ../../sass/partials/_modules.scss */
+  /* line 90, ../../sass/partials/_modules.scss */
   .index-s1, .blog-s1 {
     background-blend-mode: multiply !important;
     background-color: #999 !important;
     background-position: center;
   }
-  /* line 65, ../../sass/partials/_modules.scss */
+  /* line 91, ../../sass/partials/_modules.scss */
   .index-s1 *, .blog-s1 * {
     color: #fff !important;
     text-shadow: 1px 1px 4px #000;
   }
 
-  /* line 75, ../../sass/partials/_modules.scss */
+  /* line 101, ../../sass/partials/_modules.scss */
   .navbar-toggler {
     background-color: #666;
     border-color: #333;
   }
-  /* line 79, ../../sass/partials/_modules.scss */
+  /* line 105, ../../sass/partials/_modules.scss */
   .navbar-nav {
     background-color: #666;
     border: 1px solid #333;
